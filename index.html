@@ -7,90 +7,96 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="#" class="main-header-logo">
           <img src="img/logo.svg" width="135" height="70" alt="Логотип города"></a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="media.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Седона</h1>
-      <section class="description">
+      <div class="city-view">
+        <img src="img/index-sedona.svg" width="768" height="510" alt="Вид на город">
+      </div>
+      <section class="description">    
         <h2 class="visually-hidden">Описание</h2>
-        <figure class="city-view">
-          <img src="img/index-sedona.svg" width="100%" height="510" alt="Вид на город">
-        </figure>
         <b class="city-description">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="features-view">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="features-list">
           <li class="feature-item">
-            <h3>Настоящий городок</h3>
-            <span>№1</span>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="caption">
+              <h3>Настоящий городок</h3>
+              <span>№1</span>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img src="img/index-small-town.svg" width="510" height="255" alt="Маленький городок">
           </li>
+        </ul>
+        <div class="guideline-list">
+          <h3 class="visually-hidden">Рекомендации</h3>
+          <ul>
+            <li class="guideline-item">
+              <h4>Жилье</h4>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="guideline-item">
+              <h4>Еда</h4>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="guideline-item">
+              <h4>Сувениры</h4>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="features-list">
           <li class="feature-item">
+            <img src="img/index-devil-bridge.svg" width="490" height="255" alt="Мост дьявола">
+            <div class="caption">
               <h3>Там есть мост дьявола</h3>
               <span>№2</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              <img src="img/index-devil-bridge.svg" width="490" height="255" alt="Мост дьявола">
-          </li>
-          <li class="feature-item">
-              <h3>Небольшая площадь</h3>
-              <span>№3</span>
-              <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item">
-              <h3>Красивая дорога</h3>
-              <span>№4</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item">
-              <h3>Мало туристов</h3>
-              <span>№5</span>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="guideline">
-        <h2 class="visually-hidden">Рекомендации</h2>
-        <ul class="guideline-list">
-          <li class="guideline-item">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3>Небольшая площадь</h3>
+            <span>№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="guideline-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="feature-item">
+            <h3>Красивая дорога</h3>
+            <span>№4</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="guideline-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+          <li class="feature-item">
+            <h3>Мало туристов</h3>
+            <span>№5</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <b class="interesting-search">Заинтересовались?</b>
-        <p class="search-instruction">Укажите предполагаемые даты поездки,<br>
+        <p class="search-instruction">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <span class="button search-button">Поиск гостиницы в Седоне</span>
+        <a href="#" class="button search-button">Поиск гостиницы в Седоне</a>
       </section>
-      <article class="map">
-        <figure class="map-view">
-          <img src="img/index-map.svg" width="100%" height="475" alt="Карта Седоны">
-        </figure>
-      </article>
+      <div class="map">
+        <img src="img/index-map.svg" width="768" height="475" alt="Карта Седоны">
+      </div>
     </main>
     <footer class="main-footer">
-      <b class="footer-visit">#VISITSEDONA</b>
+      <strong class="footer-visit">#VISITSEDONA</strong>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
