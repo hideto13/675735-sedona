@@ -90,6 +90,31 @@
         <p class="search-instruction">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="button search-button">Поиск гостиницы в Седоне</a>
+        <article class="modal modal-search">
+          <form class="hotel-search" method="get" action="https://echo.htmlacademy.ru">
+            <div class="search-option">
+              <label class="search-name">Дата заезда:
+                <input  class="search-input" type="text" name="arrival" value="24 апреля 2017">
+              </label>
+            </div>
+            <div class="search-option">
+              <label class="search-name">Дата выезда:
+                <input class="search-input" type="text" name="departure" value="4 июля 2017">
+              </label>
+            </div>
+            <div class="search-option">
+              <label class="search-name">Взрослые:
+                <input class="search-input" type="number" name="adult" value="2">
+              </label>
+            </div>
+            <div class="search-option">
+              <label class="search-name">Дети:
+                <input class="search-input" type="number" name="child" value="0">
+              </label>
+            </div>
+            <button class="button search-button-submit" type="submit">Найти</button>
+          </form>
+        </article>
       </section>
       <div class="map">
         <img src="img/map.png" width="1280" height="747" alt="Карта Седоны">
@@ -111,31 +136,5 @@
         </a>
       </div>
     </footer>
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <form class="hotel-search" method="get" action="#">
-        <div class="search-option">
-          <label>Дата заезда:
-            <input  class="search-input" type="date" name="arrival" value="24 апреля 2017">
-          </label>
-        </div>
-        <div class="search-option">
-          <label>Дата выезда:
-            <input class="search-input" type="date" name="departure" value="4 июля 2017">
-          </label>
-        </div>
-        <div class="search-option">
-          <label>Взрослые:
-            <input class="search-input" type="number" name="adult" value="2">
-          </label>
-        </div>
-        <div class="search-option">
-          <label>Дети:
-            <input class="search-input" type="number" name="child" value="0">
-          </label>
-        </div>
-        <button type="submit" class="button search-button-submit">Найти</button>
-      </form>
-    </section>
   </body>
 </html>

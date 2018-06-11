@@ -21,60 +21,60 @@
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <form class="hotels-filter" method="get" action="#">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
+        <form class="hotels-filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-infrastructure">
+            <legend class="filter-name">Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
                 <label>
-                  <input class="filter-input-checkbox" type="checkbox" name="swimmingpool" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="infrastructure" value="swimmingpool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                    <input class="filter-input-checkbox" type="checkbox" name="parking">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="infrastructure" value="parking">
                     Парковка
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                    <input class="filter-input-checkbox" type="checkbox" name="Wi-Fi">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="infrastructure" value="Wi-Fi">
                     Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
+          <fieldset class="filter-housing">
+            <legend class="filter-name">Тип жилья:</legend>
             <ul>
               <li class="filter-option">
                 <label>
-                    <input class="filter-input-checkbox" type="checkbox" name="hotel" checked>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="housing" value="hotel" checked>
                     Гостиница
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                    <input class="filter-input-checkbox" type="checkbox" name="motel" checked>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="housing" value="motel" checked>
                     Мотель
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                    <input class="filter-input-checkbox" type="checkbox" name="apartments" checked>
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="housing" value="apartments" checked>
                     Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки(р):</legend>
+          <fieldset class="filter-price">
+            <legend class="filter-name">Стоимость в сутки(р):</legend>
             <div>
               <span>От 0</span>
               <span>До 3000</span>
             </div>
-            <input type="range" min="0" max="3000" value="2200">
+            <input class="filter-input filter-input-range" type="range" min="0" max="3000" name="price" value="2200">
             <button type="submit" class="button filter-button">Показать</button>
           </fieldset>
         </form>
