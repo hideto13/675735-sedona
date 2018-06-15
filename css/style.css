@@ -27,6 +27,7 @@ a {
 .site-navigation a {
     color: #000000;
     text-align: center;
+    transition: all 0.10s linear;
   }
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -39,7 +40,7 @@ a {
     color: #766357;
   }
 .city-view {
-    background-image: url("img/index-sedona.jpg");
+    background-image: url("../img/index-sedona.jpg");
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -100,6 +101,7 @@ a {
     color: #ffffff;
     vertical-align: middle;
     text-transform: uppercase;
+    transition: all 0.10s linear;
 
     background-color: #81b3d2;
     border: none;
@@ -115,6 +117,7 @@ a {
 .search-button {
     font-size: 21px;
     line-height: 26px;
+    transition: all 0.10s linear;
 
     background-color: #766357;
   }
@@ -133,6 +136,7 @@ a {
 .search-option input {
     font: inherit;
     color: #000000;
+    transition: all 0.10s linear;
 
     background-color: #f2f2f2;
   }
@@ -151,10 +155,7 @@ a {
     color: #000000;
     line-height: 26px;
 
-    background-color: #ffffff;
-    background-image: url("img/footer.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-color:rgba(250, 250,250, 0.9);
   }
 .main-footer strong {
     font-size: 21px;
@@ -164,21 +165,61 @@ a {
 .footer-social {
     text-align: center;
   }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+.row {
+    display: flex;
+  }
+.social-button {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    transition: all 0.10s linear;
+  }
+.social-icon {
+    fill: #ffffff;
+    transition: all 0.10s linear;
+  }
+.social-button:active .social-icon {
+    fill: rgba(255, 255, 255, 0.3);
+}
 .footer-social ul {
     list-style: none;
   }
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-   color: #81b3d2;
+.logo-htmlacademy {
+    fill: #231f20;
+    transition: all 0.10s linear;
   }
-.footer-copyright a:active {
-    color: #bdbbbc;
+.logo-htmlacademy:hover,
+.logo-htmlacademy:focus {
+   fill: #81b3d2;
+  }
+.logo-htmlacademy:active {
+    fill: #bdbbbc;
   }
 .filters {
     color: #ffffff;
   
     background-color: #766357;
-    background-image: url("img/background-sedona.jpg");
+    background-image: url("../img/background-sedona.jpg");
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -192,6 +233,9 @@ a {
 .filters ul {
     list-style: none;
   }
+.filters label {
+  cursor: pointer;
+}
 .filter-price {
     background-color:transparent;
     font-weight: normal;
@@ -228,6 +272,7 @@ a {
     font-size: 12px;
     color: rgba(0, 0, 0, 0.3);
     text-decoration: underline dotted #81b3d2;
+    transition: all 0.10s linear;
   }
 .sorting-item a:hover,
 .sorting-item a:focus {
@@ -247,6 +292,7 @@ a {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
+    transition: all 0.10s linear;
   }
 .result-item h3:hover,
 .result-item h3:focus {
@@ -259,8 +305,9 @@ a {
     color:#666666;
     background-color: #f2f2f2;
   }
-.button-booking{
+.button-booking {
     background-color: #766357;
+    transition: all 0.10s linear;
   }
 .button-booking:hover,
 .button-booking:focus {
