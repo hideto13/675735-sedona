@@ -28,7 +28,7 @@
       </div>
       <section class="description">    
         <h2 class="visually-hidden">Описание</h2>
-        <div class="description-wrap">
+        <div class="caption-container">
           <b class="city-description">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
           <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
@@ -38,7 +38,7 @@
           <ul class="features-list">
             <li class="feature-item-wrapper">
               <div class="feature-item feature-item-large">
-                <h3>Настоящий городок</h3>
+                <h3>Настоящий <br> городок</h3>
                 <span>-№1-</span>
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
               </div>
@@ -64,23 +64,23 @@
             <li class="feature-item-wrapper">
               <div class="img-wrap"><img src="img/devil-bridge.jpg" width="800" height="400" alt="Мост дьявола"></div>
               <div class="feature-item feature-item-large">
-                <h3>Там есть мост дьявола</h3>
+                <h3>Там есть <br> мост дьявола</h3>
                 <span>-№2-</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </li>
             <li class="feature-items"><ul class="features-list-small"><li class="feature-item feature-item-small">
-              <h3>Небольшая площадь</h3>
+              <h3>Небольшая <br> площадь</h3>
               <span>-№3-</span>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
             <li class="feature-item feature-item-small">
-              <h3>Красивая дорога</h3>
+              <h3>Красивая <br> дорога</h3>
               <span>-№4-</span>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="feature-item feature-item-small">
-              <h3>Мало туристов</h3>
+              <h3>Мало <br> туристов</h3>
               <span>-№5-</span>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </li></ul></li>
@@ -88,9 +88,9 @@
       </section>
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <div class="search-wrap">
+        <div class="caption-container">
           <b class="interesting-search">Заинтересовались?</b>
-          <p class="search-instruction">Укажите предполагаемые даты поездки,
+          <p class="search-instruction">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <a href="#" class="button search-button">Поиск гостиницы в Седоне</a>
@@ -99,42 +99,48 @@
         <img src="img/map.png" width="1200" height="747" alt="Карта Седоны">
         <article class="modal modal-search">
           <form class="hotel-search" method="get" action="https://echo.htmlacademy.ru">
-            <p class="search-option search-option-large">
-              <label class="search-name">Дата заезда:
-                <input class="search-input" type="text" name="arrival" value="24 апреля 2017">
+            <div class="search-option search-option-large">
+              <label class="search-name" for="arrival">Дата заезда:</label>
+              <div class="label-row">
+              <input class="search-input" type="text" id="arrival" name="arrival" value="24 апреля 2017">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-              </label>
-            </p>
-            <p class="search-option search-option-large">
-              <label class="search-name">Дата выезда:
-                <input class="search-input" type="text" name="departure" value="4 июля 2017">
+              </div>  
+            </div>
+            <div class="search-option search-option-large">
+              <label class="search-name" for="departure">Дата выезда:</label>
+                <div class="label-row">  
+                <input class="search-input" type="text" id="departure" name="departure" value="4 июля 2017">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-              </label>
-            </p>
-            <div class="search-option-large"><p class="search-option search-option-small">
-              <label class="search-name">Взрослые:
-                <svg  class="minus" height="12" width="12">
-                  <line x1="0" y1="6" x2="12" y2="6" style="stroke-width:3" />
-                </svg>
-                <input class="search-input" type="number" name="adult" value="2">
-                <svg  class="plus" height="12" width="12">
-                  <line x1="0" y1="6" x2="12" y2="6" style="stroke-width:3" />
-                  <line x1="6" y1="0" x2="6" y2="12" style="stroke-width:3" />
-                </svg>
-              </label>
-            </p>
-            <p class="search-option search-option-small">
-              <label class="search-name">Дети:
-                  <svg  class="minus" height="12" width="12">
-                      <line x1="0" y1="6" x2="12" y2="6" style="stroke-width:3" />
-                    </svg>
-                <input class="search-input" type="number" name="child" value="0">
-                <svg  class="plus" height="12" width="12">
-                  <line x1="0" y1="6" x2="12" y2="6" style="stroke-width:3" />
-                  <line x1="6" y1="0" x2="6" y2="12" style="stroke-width:3" />
-                </svg>
-              </label>
-            </p></div>
+              </div>  
+            </div>
+            <div class="search-row">
+              <div class="search-option search-option-small">
+                <label class="search-name" for="adult">Взрослые:</label>
+                  <div class="label-row">
+                      <button  class="number-btn minus" type="button">
+                        <span class="visually-hidden">Уменьшить</span>
+                      </button>
+                      <input class="search-input" type="text" id="adult" name="adult" value="2">
+                      <button  class="number-btn plus" type="button">
+                        <span class="visually-hidden">Увеличить</span>
+                      </button>
+                    </div>
+                
+                  </div>
+            <div class="search-option search-option-small">
+              <label class="search-name" for="child">Дети:</label>
+                  <div class="label-row">
+                      <button  class="number-btn minus" type="button">
+                        <span class="visually-hidden">Уменьшить</span>
+                      </button>
+                      <input class="search-input" type="text" id="child" name="child" value="0">
+                      <button  class="number-btn plus" type="button">
+                        <span class="visually-hidden">Увеличить</span>
+                      </button>
+                    </div>
+              
+                  </div>
+          </div>
             <button class="button search-button-submit" type="submit">Найти</button>
           </form>
         </article>
