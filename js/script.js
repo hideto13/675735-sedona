@@ -10,6 +10,8 @@ var isStorageSupport = true;
 var adultStorage = "";
 var childStorage = "";
 
+
+document.documentElement .classList.replace('no-js', 'js');
   
 try {
     adultStorage = localStorage.getItem("adult");
