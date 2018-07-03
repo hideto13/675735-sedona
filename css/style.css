@@ -328,6 +328,10 @@ input[type="radio"].visually-hidden {
     color: #000000;
   }
 .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
 
     background-color: #eeeeee;
@@ -342,7 +346,40 @@ input[type="radio"].visually-hidden {
     text-align: center;
   }
 .feature-item p {
-    margin-top: 20px;
+    margin: 21px 0;
+}
+.feature-item .number {
+    position: relative;
+
+    margin: 0;
+}
+.feature-item .number::before {
+    content:"";
+
+    position: absolute;
+    top:50%;
+    left: -14px;
+
+    width: 8px;
+    height: 1.5px;
+
+    background-color: white;
+  }
+.feature-item .number::after {
+    content:"";
+
+    position: absolute;
+    top:50%;
+    right: -14px;
+
+    width: 8px;
+    height: 1.5px;
+
+    background-color: white;
+  }
+.feature-item-small .number::before,
+.feature-item-small .number::after {
+    background-color: #333333;
   }
 .features-list-small {
     display: -webkit-box;
